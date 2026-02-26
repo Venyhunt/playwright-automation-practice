@@ -14,7 +14,10 @@ export default defineConfig({
     headless: false,
     browserName: 'chromium',
     trace: 'retain-on-failure',
-
+    video: 'on', 
+    launchOptions: {
+      slowMo: 1000, // Delays actions by 1 second so the video is readable
+    },
     
   },
 

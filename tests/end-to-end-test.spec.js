@@ -1,7 +1,7 @@
 const {test, expect}=require("@playwright/test");
 const { text } = require("node:stream/consumers");
 
-test("ecom website test",async ({page})=>
+test.only("ecom website test",async ({page})=>
 {
 
   const name="ZARA COAT 3";
